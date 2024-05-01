@@ -1,0 +1,64 @@
+'''
+Neste código, testei os operadores aritméticos,
+além de utilizar a formatação de string f para mostrar os dados na tela de forma conveniente.
+'''
+
+# Teste dos operadores aritméticos de adição e subtração
+n = int(input('Digite um número: '))
+print(f'Seu antecessor é: {n - 1}\nE seu sucessor é: {n + 1}')
+
+# Teste dos operadores aritméticos de multiplicação e potenciação
+n = int(input('Digite um número: '))
+print(f'Seu dobro é: {n * 2}\nSeu triplo é: {n * 3}\nE sua raiz quadrada é: {n ** (1/2)}')
+
+# Cálculo da média entre duas notas
+n1 = float(input('Digite sua nota da av1: '))
+n2 = float(input('Digite sua nota da av2: '))
+m = (n1 + n2) / 2
+print(f'A sua média é: {m}')
+
+# Conversão de metros para centímetros e milímetros
+n1 = float(input('Digite um valor em metros: '))
+print(f'O valor em centímetros é: {n1 * 100 :.0f}cm\nO valor em milímetros é: {n1 * 1000 :.0f}mm')
+
+# Exibição da tabuada de um número inteiro
+print(f'A tabuada do {n1} é: ')
+print('-' * 12)
+print(n1, f'x 1 = {n1 * 1}')
+print(n1, f'x 2 = {n1 * 2}')
+print(n1, f'x 3 = {n1 * 3}')
+print(n1, f'x 4 = {n1 * 4}')
+print(n1, f'x 5 = {n1 * 5}')
+print(n1, f'x 6 = {n1 * 6}')
+print(n1, f'x 7 = {n1 * 7}')
+print(n1, f'x 8 = {n1 * 8}')
+print(n1, f'x 9 = {n1 * 9}')
+print(n1, f'x 10 = {n1 * 10}')
+print('-' * 12)
+
+# Conversão de reais para dólares com a taxa de câmbio atual
+n1 = float(input('Quantos reais você tem?: R$'))
+print(f"Com esse valor, você pode comprar US${n1 / 5.20 :.2f}")
+
+# Cálculo da área de uma parede e quantidade de tinta necessária para pintá-la
+n1 = float(input('Qual é a largura da parede (em metros)?: '))
+n2 = float(input('Qual é a altura da parede (em metros)?: '))
+a = n1 * n2
+print(f'A quantidade necessária de tinta para pintar essa parede é: {a / 2} litros de tinta')
+
+# Cálculo do preço de um produto com desconto de 5%
+n1 = float(input('Qual é o preço do produto?: '))
+print(f"O preço do produto com 5% de desconto é: R${n1 - (5/100 * n1):.2f}")
+
+# Cálculo do salário com aumento de 15%
+n1 = float(input('Qual é o seu salário?: '))
+print(f"O valor do seu salário com 15% de aumento é: R${n1 + (15/100 * n1):.2f}")
+
+# Conversão de temperatura de Celsius para Fahrenheit
+n1 = float(input('Informe a temperatura em Cº: '))
+print(f"{n1}Cº em Fahrenheit equivale a: {n1 * (9 / 5) + 32}ºF!")
+
+# Cálculo do valor a ser pago pelo aluguel de um carro
+n1 = int(input('Quantos dias alugados? '))
+n2 = int(input('Quantos km rodados? '))
+print(f"O total a pagar é de R${(n1 * 60) + (0.15 * n2):.2f}")
